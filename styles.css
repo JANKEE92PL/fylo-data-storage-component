@@ -72,9 +72,9 @@ body {
   background-color: #1d2c67;
   width: 450px;
   padding: 2.5em;
-  height: 120px;
-  -webkit-transform: translateY(44px);
-          transform: translateY(44px);
+  height: 160px;
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
   border-radius: 8px;
   position: relative;
 }
@@ -86,10 +86,11 @@ body {
 .wrapper .container .box-right .usage-left {
   padding: 1em;
   position: absolute;
-  top: -25%;
-  right: 15%;
+  top: -30%;
+  right: 10%;
   background-color: white;
   border-radius: 6px 6px 0 6px;
+  border: none;
 }
 
 .wrapper .container .box-right .usage-left span {
