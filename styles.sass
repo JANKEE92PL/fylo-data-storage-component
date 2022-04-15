@@ -53,6 +53,36 @@ body
 
         .box-right
             background-color: $darkBlue
+            width: 450px
+            padding: 2.5em
+            height: 120px
+            transform: translateY(44px)
+            border-radius: 8px
+            position: relative
+            .usage-text
+                color: $grayishBlue
+            .usage-left
+                padding: 1em
+                position: absolute
+                top: -25%
+                right: 15%
+                background-color: white
+                border-radius: 6px 6px 0 6px
+                span
+                    font-size: 2em
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: -16px
+                    right: -0.5px
+                    width: 16px
+                    height: 16px
+                    background-color: white
+                    clip-path: polygon(0 0, 100% 0, 100% 100%)
+                    z-index: 10
+
+            .usage-volume
+                color: $paleBlue
 
     footer .attribution
         font-size: 11px

@@ -70,6 +70,47 @@ body {
 
 .wrapper .container .box-right {
   background-color: #1d2c67;
+  width: 450px;
+  padding: 2.5em;
+  height: 120px;
+  -webkit-transform: translateY(44px);
+          transform: translateY(44px);
+  border-radius: 8px;
+  position: relative;
+}
+
+.wrapper .container .box-right .usage-text {
+  color: #848794;
+}
+
+.wrapper .container .box-right .usage-left {
+  padding: 1em;
+  position: absolute;
+  top: -25%;
+  right: 15%;
+  background-color: white;
+  border-radius: 6px 6px 0 6px;
+}
+
+.wrapper .container .box-right .usage-left span {
+  font-size: 2em;
+}
+
+.wrapper .container .box-right .usage-left::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  right: -0.5px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%);
+  z-index: 10;
+}
+
+.wrapper .container .box-right .usage-volume {
+  color: #dddbff;
 }
 
 .wrapper footer .attribution {
