@@ -94,11 +94,13 @@ body {
   top: -30%;
   right: 10%;
   background-color: white;
+  color: #848794;
   border-radius: 6px 6px 0 6px;
 }
 
 .wrapper .container .box-right .usage-left span {
   font-size: 2em;
+  color: black;
 }
 
 .wrapper .container .box-right .usage-left::after {
