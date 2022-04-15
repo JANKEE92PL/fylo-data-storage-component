@@ -28,15 +28,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .wrapper .container .box-left {
   background-color: #1d2c67;
+  width: 600px;
   padding: 2.5em 12.5em 2.5em 2.5em;
   border-radius: 8px 100px 8px 8px;
 }
@@ -49,8 +53,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -60,7 +65,7 @@ body {
   background-color: #0c122c;
   padding: .75em;
   border-radius: 16px;
-  margin: 0 6px;
+  margin: 0px 6px;
 }
 
 .wrapper .container .box-left .flex a img {
@@ -70,7 +75,7 @@ body {
 
 .wrapper .container .box-right {
   background-color: #1d2c67;
-  width: 450px;
+  width: 750px;
   padding: 2.5em;
   height: 160px;
   -webkit-transform: translateY(24px);
@@ -90,7 +95,6 @@ body {
   right: 10%;
   background-color: white;
   border-radius: 6px 6px 0 6px;
-  border: none;
 }
 
 .wrapper .container .box-right .usage-left span {
@@ -100,7 +104,7 @@ body {
 .wrapper .container .box-right .usage-left::after {
   content: '';
   position: absolute;
-  bottom: -16px;
+  bottom: -15px;
   right: -0.5px;
   width: 16px;
   height: 16px;
@@ -110,16 +114,42 @@ body {
   z-index: 10;
 }
 
-.wrapper .container .box-right .usage-volume {
+.wrapper .container .box-right meter {
+  width: 100%;
+}
+
+.wrapper .container .box-right meter::-webkit-meter-bar {
+  background: #FFF;
+}
+
+.wrapper .container .box-right meter::-webkit-meter-optimum-value {
+  background: -webkit-gradient(linear, left top, left bottom, from(#62c462), to(#51a351));
+  background: linear-gradient(to bottom, #62c462, #51a351);
+}
+
+.wrapper .container .box-right meter::-webkit-meter-suboptimum-value {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbb450), to(#f89406));
+  background: linear-gradient(to bottom, #fbb450, #f89406);
+}
+
+.wrapper .container .box-right meter::-webkit-meter-even-less-good-value {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee5f5b), to(#bd362f));
+  background: linear-gradient(to bottom, #ee5f5b, #bd362f);
+}
+
+.wrapper .container .box-right .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.wrapper .usage-volume {
   color: #dddbff;
-}
-
-.wrapper footer .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.wrapper a {
-  color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */

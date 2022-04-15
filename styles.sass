@@ -30,30 +30,32 @@ body
 
     .container
         display: flex
-        justify-content: space-around
+        justify-content: space-evenly
         align-items: center
+        transform: translateY(-50%)
         .box-left
             background-color: $darkBlue
+            width: 600px
             padding: 2.5em 12.5em 2.5em 2.5em
             border-radius: 8px 100px 8px 8px
             .logo
                 margin: 1em 0
             .flex
                 display: flex
-                justify-content: space-around
+                justify-content: space-between
                 align-items: baseline
                 a
                     background-color: $veryDarkBlue
                     padding: .75em
                     border-radius: 16px
-                    margin: 0 6px
+                    margin: 0px 6px
 
                     img
                         object-fit: cover
 
         .box-right
             background-color: $darkBlue
-            width: 450px
+            width: 750px
             padding: 2.5em
             height: 160px
             transform: translateY(24px)
@@ -68,25 +70,35 @@ body
                 right: 10%
                 background-color: white
                 border-radius: 6px 6px 0 6px
-                border: none
                 span
                     font-size: 2em
                 &::after
                     content: ''
                     position: absolute
-                    bottom: -16px
+                    bottom: -15px
                     right: -0.5px
                     width: 16px
                     height: 16px
                     background-color: white
                     clip-path: polygon(0 0, 100% 0, 100% 100%)
                     z-index: 10
+            meter
+                width: 100%
+            meter::-webkit-meter-bar
+                background: #FFF
 
-            .usage-volume
-                color: $paleBlue
+            meter::-webkit-meter-optimum-value
+                background: linear-gradient(to bottom, #62c462, #51a351)
 
-    footer .attribution
-        font-size: 11px
-        text-align: center
-    a
-        color: hsl(228, 45%, 44%)
+            meter::-webkit-meter-suboptimum-value
+                background: linear-gradient(to bottom, #fbb450, #f89406)
+
+            meter::-webkit-meter-even-less-good-value
+                background: linear-gradient(to bottom, #ee5f5b, #bd362f)
+
+            .flex
+                display: flex
+                justify-content: space-between
+                align-items: baseline
+    .usage-volume
+        color: $paleBlue

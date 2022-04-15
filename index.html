@@ -26,17 +26,16 @@
       <div class="box-right">
         <p class="usage-text">You’ve used <span class="usage-volume">815 GB</span> of your storage</p>
         <p class="usage-left"><span>185</span> GB Left</p>
-        <input type="range" name="volume" id="volume">
-        <p class="usage-volume">0 GB</p>
-        <p class="usage-volume">1000 GB</p>
+        <meter id="volume" value="81" min="0" low="15" optimum="30" high="60" max="100"></meter>
+        <div class="flex">
+          <p class="usage-volume">0 GB</p>
+          <p class="usage-volume">1000 GB</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+
 </body>
 
 </html>
