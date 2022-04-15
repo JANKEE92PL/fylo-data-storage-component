@@ -24,6 +24,20 @@ body {
   left: 0;
 }
 
+.wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .container .box-left {
+  background-color: #1d2c67;
+}
+
+.wrapper .container .box-right {
+  background-color: #1d2c67;
+}
+
 .wrapper footer .attribution {
   font-size: 11px;
   text-align: center;
